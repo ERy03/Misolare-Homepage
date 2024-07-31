@@ -6,7 +6,7 @@ layout: home
 title: MiSolare
 ---
 
-<div class="video-container d-flex ratio ratio-16x9">
+<div class="video-container d-flex ratio ratio-16x9 mt-4">
   <div
     class="video-cover z-1 d-flex flex-column justify-content-center gap-4 ps-4"
   >
@@ -17,4 +17,27 @@ title: MiSolare
     <source src="assets/testing.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
+</div>
+<div class="content-container mt-4">
+  <h3 class="text-uppercase text-center mb-4">youtube</h3>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+    {% for video in site.data.videos %}
+    <div class="col">
+      <div class="card">
+        <img
+          src="{{ video.thumbnail }}"
+          alt="Video Thumbnail"
+          class="card-img-top"
+        />
+        <div class="card-body justify-content-between">
+          <h5 class="card-title">{{ video.title }}</h5>
+          <p class="fw-medium text-uppercase" style="letter-spacing: 0.05rem">
+            Watch
+          </p>
+        </div>
+        <a href="{{ video.url }}" target="_blank" class="card-link"></a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
