@@ -4,7 +4,7 @@ title: "Blog 3"
 date: 2024-07-29
 categories: jekyll update
 permalink: blog-3
-image_url: https://images.unsplash.com/photo-1468436385273-8abca6dfd8d3?q=80&w=3505&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image_url: https://images.unsplash.com/photo-1542139368-847f8e3fbc6b?q=80&w=2734&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
