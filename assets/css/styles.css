@@ -8,37 +8,46 @@ h2,
 h3,
 p {
   margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
 }
 ul {
   padding: 0;
 }
 a {
   text-decoration: none;
+  color: black;
   display: inline-block;
 }
 
-.content-container {
-  width: 80vw;
+.content-container,
+.video-container {
+  width: 90vw;
   margin: 0 auto;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (max-width: 992px) {
-  .content-container {
-    width: 700px;
+  .content-container,
+  .video-container {
+    width: 86vw;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (max-width: 768px) {
-  .content-container {
-    width: 600px;
+  .content-container,
+  .video-container {
+    width: 85vw;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (max-width: 576px) {
   .content-container {
-    width: 300px;
+    width: 93vw;
+  }
+  .video-container {
+    margin: 0;
+    width: 100vw;
   }
 }
