@@ -1,7 +1,7 @@
 ---
 layout: home
 title: "Blog 3"
-date: 2024-07-29
+date: 2024-08-01
 categories: jekyll update
 permalink: blog-3
 image_url: https://images.unsplash.com/photo-1542139368-847f8e3fbc6b?q=80&w=2734&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
