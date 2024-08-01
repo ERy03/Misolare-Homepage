@@ -11,7 +11,7 @@ title: MiSolare
     class="video-cover z-1 d-flex flex-column justify-content-center gap-4 ps-4"
   >
     <h2 class="fs-1 text-uppercase">{{ site.title }}</h2>
-    <p class="fs-4">IT, Photography, Travel Tips in Amsetrdam</p>
+    <p class="fs-4">IT, Photography, Travel Tips in Amsterdam</p>
   </div>
   <video class="object-fit-cover" autoplay muted preload="auto" loop>
     <source src="assets/testing.mp4" type="video/mp4" />
@@ -19,33 +19,55 @@ title: MiSolare
   </video>
 </div>
 <div class="content-container mt-4">
-  <h3 class="text-uppercase text-center mb-4">youtube</h3>
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
-    {% for video in site.data.videos %}
-    <div class="col">
-      <div class="card">
-        <img
-          src="{{ video.thumbnail }}"
-          alt="Video Thumbnail"
-          class="card-img-top"
-        />
-        <div class="card-body">
-          <h5 class="card-title">{{ video.title }}</h5>
-          <p
-            class="fw-medium text-uppercase pt-1"
-            style="letter-spacing: 0.05rem"
-          >
-            Watch
-          </p>
+  <section id="service">
+    <h3 class="text-uppercase text-center mb-4">service</h3>
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-4">
+      {% for service in site.data.services %}
+      <div class="col">
+        <div class="card align-items-center">
+          <img
+            src="{{ service.svg | relative_url }}"
+            alt="Video Thumbnail"
+            class="card-img-top object-fit-cover"
+            style="height: 220px; width: 230px"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center">{{ service.title }}</h5>
+          </div>
         </div>
-        <a href="{{ video.url }}" target="_blank" class="card-link"></a>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
-  <div class="mt-4">
+  </section>
+  <section id="youtube" class="mt-4">
+    <h3 class="text-uppercase text-center mb-4">youtube</h3>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4">
+      {% for video in site.data.videos %}
+      <div class="col">
+        <div class="card">
+          <img
+            src="{{ video.thumbnail }}"
+            alt="Video Thumbnail"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ video.title }}</h5>
+            <p
+              class="fw-medium text-uppercase pt-1"
+              style="letter-spacing: 0.05rem"
+            >
+              Watch
+            </p>
+          </div>
+          <a href="{{ video.url }}" target="_blank" class="card-link"></a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  <section id="blogs" class="mt-4">
     <h3 class="text-uppercase text-center mb-4">Blogs</h3>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4">
       {% for post in site.posts | limit:3 %}
       <div class="col">
         <div class="card">
@@ -53,12 +75,13 @@ title: MiSolare
             src="{{ post.image_url }}"
             alt="Post Thumbnail"
             class="card-img-top object-fit-cover"
-            style="height: 230px;"
+            style="height: 230px"
           />
           <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
             <p class="fw-light fst-italic card-text mb-1">
-              {{ post.excerpt | strip_html | strip_newlines | truncatewords: 45, '...' }}
+              {{ post.excerpt | strip_html | strip_newlines | truncatewords: 45,
+              '...' }}
             </p>
             <p
               class="fw-medium text-uppercase pt-1"
@@ -72,5 +95,11 @@ title: MiSolare
       </div>
       {% endfor %}
     </div>
-  </div>
+  </section>
+</div>
+<div class="blob-container1">
+  <img src="{{ '/assets/images/blob2.svg' | relative_url }}" alt="Blob Shape" />
+</div>
+<div class="blob-container2">
+  <img src="{{ '/assets/images/blob1.svg' | relative_url }}" alt="Blob Shape" />
 </div>

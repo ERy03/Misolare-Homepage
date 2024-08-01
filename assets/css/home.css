@@ -4,12 +4,12 @@
 }
 
 .card {
+  background-color: transparent;
   border: none;
   height: 100%;
 }
 
 .card-body {
-  background: rgb(250, 250, 250);
   padding-left: 0;
   padding-right: 0;
 }
@@ -20,4 +20,26 @@
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.blob-container1 {
+  position: absolute; /* Or relative, fixed, etc., depending on your design */
+  top: 60vw;
+  right: -60vw; /* Pushes the blob off-screen to the right */
+  width: 105vw; /* Extends width beyond the viewport */
+  z-index: -1; /* Ensure it’s behind other content */
+}
+
+.blob-container2 {
+  position: absolute; /* Or relative, fixed, etc., depending on your design */
+  top: 110vw; /* Extends width beyond the viewport */
+  z-index: -1;
+  left: -55vw;
+  width: 110vw;
+}
+
+.blob-container1 img,
+.blob-container2 img {
+  width: 100%; /* Adjust size as needed */
+  height: auto;
 }
