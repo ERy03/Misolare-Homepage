@@ -24,7 +24,7 @@
 
 .blob-container1 {
   position: absolute; /* Or relative, fixed, etc., depending on your design */
-  top: 60vw;
+  top: 0;
   right: -60vw; /* Pushes the blob off-screen to the right */
   width: 105vw; /* Extends width beyond the viewport */
   z-index: -1; /* Ensure it’s behind other content */
@@ -32,14 +32,27 @@
 
 .blob-container2 {
   position: absolute; /* Or relative, fixed, etc., depending on your design */
-  top: 110vw; /* Extends width beyond the viewport */
+  top: -37vw; /* Extends width beyond the viewport */
   z-index: -1;
-  left: -55vw;
-  width: 110vw;
+  left: -48vw;
+  width: 95vw;
 }
 
 .blob-container1 img,
 .blob-container2 img {
   width: 100%; /* Adjust size as needed */
   height: auto;
+}
+
+.contact-btn {
+  transition: color 0.3s ease, transform 0.3s ease;
+  background-color: #2c3e50;
+  color: white;
+  width: fit-content;
+}
+
+.contact-btn:hover {
+  background-color: #4A6E85;
+  color: white;
+  transform: scale(1.05);
 }
