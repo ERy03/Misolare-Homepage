@@ -29,6 +29,15 @@ a {
   margin: 0 auto;
 }
 
+.content-container {
+  position: relative;
+}
+
+.container-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media (max-width: 992px) {
   .content-container,
