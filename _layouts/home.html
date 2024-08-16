@@ -37,9 +37,11 @@
   <body>
     <!-- Navigation bar -->
     <div class="content-container">{% include navbar.html %}</div>
-    <main>{{ content }}</main>
-    <!-- Footer content -->
-    {% include footer.html %}
+    <div class="container-wrapper">
+      <main>{{ content }}</main>
+      <!-- Footer content -->
+      {% include footer.html %}
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
