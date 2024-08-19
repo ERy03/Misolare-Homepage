@@ -1,0 +1,11 @@
+.navbar-misolare {
+  justify-content: space-between;
+}
+
+.navbar-misolare .navbar-collapse {
+  flex-grow: 0;
+}
+
+.offcanvas {
+  width: 45% !important;
+}
