@@ -41,6 +41,7 @@ title: MiSolare
     </div>
     <div class="blob-container1">
       <img
+        loading="lazy"
         src="{{ '/assets/images/blob2.svg' | relative_url }}"
         alt="Blob Shape"
       />
@@ -68,7 +69,12 @@ title: MiSolare
               Watch
             </p>
           </div>
-          <a href="{{ video.url }}" target="_blank" class="card-link"></a>
+          <a
+            href="{{ video.url }}"
+            target="_blank"
+            class="card-link"
+            rel="noopener"
+          ></a>
         </div>
       </div>
       {% endfor %}
@@ -101,13 +107,19 @@ title: MiSolare
               Read More
             </p>
           </div>
-          <a href="{{ post.url }}" target="_blank" class="card-link"></a>
+          <a
+            href="{{ post.url }}"
+            target="_blank"
+            class="card-link"
+            rel="noopener"
+          ></a>
         </div>
       </div>
       {% endfor %}
     </div>
     <div class="blob-container2">
       <img
+        loading="lazy"
         src="{{ '/assets/images/blob1.svg' | relative_url }}"
         alt="Blob Shape"
       />
