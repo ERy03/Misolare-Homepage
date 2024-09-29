@@ -27,6 +27,14 @@
     />
     <link
       rel="stylesheet"
+      href="{{ '/assets/css/about.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/contact.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
       href="{{ '/assets/css/footer.css' | relative_url }}"
     />
     <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}" />
@@ -36,12 +44,11 @@
     />
   </head>
   <body>
-    <!-- Navigation bar -->
-    <div class="content-container">{% include navbar.html %}</div>
-    <div class="container-wrapper">
-      <main>{{ content }}</main>
-      <!-- Footer content -->
-      {% include footer.html %}
+    <div class="wrapper d-flex flex-column">
+      <!-- Navigation bar -->
+      <div class="content-container">{% include navbar.html %}</div>
+
+      {{ content }}
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
