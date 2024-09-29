@@ -6,133 +6,139 @@ layout: home
 title: MiSolare
 ---
 
-<div class="video-container d-flex ratio ratio-vid mt-4 mb-4">
-  <video class="object-fit-cover" autoplay muted preload="auto" loop>
-    <source
-      src="{{ 'assets/video/misolare.MP4' | relative_url }}"
-      type="video/mp4"
-    />
-    Your browser does not support the video tag.
-  </video>
-</div>
+<div class="container-wrapper">
+  <main>
+    <div class="video-container d-flex ratio ratio-vid mt-4 mb-4">
+      <video class="object-fit-cover" autoplay muted preload="auto" loop>
+        <source
+          src="{{ 'assets/video/misolare.MP4' | relative_url }}"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-<div class="content-container pt-4 position-relative">
-  <section id="service">
-    <h3 class="text-uppercase text-center mb-4">services</h3>
-    <div
-      class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-4 mb-4"
-    >
-      {% for service in site.data.services %}
-      <div class="col">
-        <div class="card align-items-center border">
-          <img
-            src="{{ service.svg | relative_url }}"
-            alt="Video Thumbnail"
-            class="card-img-top object-fit-cover p-4"
-            style="height: 220px; width: 230px"
-          />
-          <div class="card-body p-4">
-            <h5 class="card-title text-center">{{ service.title }}</h5>
-            <p>{{ service.description }}</p>
+    <div class="content-container pt-4 position-relative">
+      <section id="service">
+        <h3 class="text-uppercase text-center mb-4">services</h3>
+        <div
+          class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-4 mb-4"
+        >
+          {% for service in site.data.services %}
+          <div class="col">
+            <div class="card align-items-center border">
+              <img
+                src="{{ service.svg | relative_url }}"
+                alt="Video Thumbnail"
+                class="card-img-top object-fit-cover p-4"
+                style="height: 220px; width: 230px"
+              />
+              <div class="card-body p-4">
+                <h5 class="card-title text-center">{{ service.title }}</h5>
+                <p>{{ service.description }}</p>
+              </div>
+            </div>
           </div>
+          {% endfor %}
         </div>
-      </div>
-      {% endfor %}
-    </div>
-    <div class="blob-container1">
-      <img
-        loading="lazy"
-        src="{{ '/assets/images/blob2.svg' | relative_url }}"
-        alt="Blob Shape"
-      />
-    </div>
-  </section>
-  <section id="youtube" class="pt-4">
-    <h3 class="text-uppercase text-center mb-4">youtube</h3>
-    <div
-      class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 mb-4"
-    >
-      {% for video in site.data.videos %}
-      <div class="col">
-        <div class="card">
+        <div class="blob-container1">
           <img
-            src="{{ video.thumbnail }}"
-            alt="Video Thumbnail"
-            class="card-img-top"
+            loading="lazy"
+            src="{{ '/assets/images/blob2.svg' | relative_url }}"
+            alt="Blob Shape"
           />
-          <div class="card-body">
-            <h5 class="card-title">{{ video.title }}</h5>
-            <p
-              class="fw-medium text-uppercase pt-1"
-              style="letter-spacing: 0.05rem"
-            >
-              Watch
-            </p>
-          </div>
-          <a
-            href="{{ video.url }}"
-            target="_blank"
-            class="card-link"
-            rel="noopener"
-          ></a>
         </div>
-      </div>
-      {% endfor %}
-    </div>
-  </section>
-  <section id="blogs" class="pt-4 position-relative">
-    <h3 class="text-uppercase text-center mb-4">Blogs</h3>
-    <div
-      class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 mb-4"
-    >
-      {% for post in site.posts %}
-      <div class="col">
-        <div class="card">
+      </section>
+      <section id="youtube" class="pt-4">
+        <h3 class="text-uppercase text-center mb-4">youtube</h3>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 mb-4"
+        >
+          {% for video in site.data.videos %}
+          <div class="col">
+            <div class="card">
+              <img
+                src="{{ video.thumbnail }}"
+                alt="Video Thumbnail"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ video.title }}</h5>
+                <p
+                  class="fw-medium text-uppercase pt-1"
+                  style="letter-spacing: 0.05rem"
+                >
+                  Watch
+                </p>
+              </div>
+              <a
+                href="{{ video.url }}"
+                target="_blank"
+                class="card-link"
+                rel="noopener"
+              ></a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      <section id="blogs" class="pt-4 position-relative">
+        <h3 class="text-uppercase text-center mb-4">Blogs</h3>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4 mb-4"
+        >
+          {% for post in site.posts %}
+          <div class="col">
+            <div class="card">
+              <img
+                src="{{ post.image_url }}"
+                alt="Post Thumbnail"
+                class="card-img-top object-fit-cover"
+                style="height: 230px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="fw-light fst-italic card-text mb-1">
+                  {{ post.excerpt | strip_html | strip_newlines | truncatewords:
+                  45, '...' }}
+                </p>
+                <p
+                  class="fw-medium text-uppercase pt-1"
+                  style="letter-spacing: 0.05rem"
+                >
+                  Read More
+                </p>
+              </div>
+              <a
+                href="{{ post.url }}"
+                target="_blank"
+                class="card-link"
+                rel="noopener"
+              ></a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="blob-container2">
           <img
-            src="{{ post.image_url }}"
-            alt="Post Thumbnail"
-            class="card-img-top object-fit-cover"
-            style="height: 230px"
+            loading="lazy"
+            src="{{ '/assets/images/blob1.svg' | relative_url }}"
+            alt="Blob Shape"
           />
-          <div class="card-body">
-            <h5 class="card-title">{{ post.title }}</h5>
-            <p class="fw-light fst-italic card-text mb-1">
-              {{ post.excerpt | strip_html | strip_newlines | truncatewords: 45,
-              '...' }}
-            </p>
-            <p
-              class="fw-medium text-uppercase pt-1"
-              style="letter-spacing: 0.05rem"
-            >
-              Read More
-            </p>
-          </div>
-          <a
-            href="{{ post.url }}"
-            target="_blank"
-            class="card-link"
-            rel="noopener"
-          ></a>
         </div>
-      </div>
-      {% endfor %}
+      </section>
+      <section
+        id="contact"
+        class="pt-4 pb-4 d-flex flex-column justify-content-center align-items-center gap-4"
+      >
+        <h3 class="text-uppercase text-center">Interested?</h3>
+        <p class="text-center">Tell Us How We Can Help</p>
+        <a type="button" href="/contact.html" class="btn btn-lg contact-btn"
+          >Get in touch</a
+        >
+      </section>
     </div>
-    <div class="blob-container2">
-      <img
-        loading="lazy"
-        src="{{ '/assets/images/blob1.svg' | relative_url }}"
-        alt="Blob Shape"
-      />
-    </div>
-  </section>
-  <section
-    id="contact"
-    class="pt-4 pb-4 d-flex flex-column justify-content-center align-items-center gap-4"
-  >
-    <h3 class="text-uppercase text-center">Interested?</h3>
-    <p class="text-center">Tell Us How We Can Help</p>
-    <a type="button" href="/contact.html" class="btn btn-lg contact-btn"
-      >Get in touch</a
-    >
-  </section>
+  </main>
+  <!-- Footer content -->
+  {% include footer.html %}
 </div>
