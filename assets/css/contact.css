@@ -1,0 +1,62 @@
+/* Contact Page Styles */
+.contact-page {
+  text-align: left;
+  padding: 100px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-title h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.contact-subtitle p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.contact-details {
+  font-size: 1.2rem;
+}
+
+.contact-details p {
+  margin-bottom: 15px;
+}
+
+.blob-container3 {
+  position: absolute; /* Or relative, fixed, etc., depending on your design */
+  top: -11vw;
+  width: 100vw;
+  z-index: -1;
+  left: -31vw;
+  max-width: 115%;
+}
+
+.blob-container3 img {
+  width: 60%; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  .contact-page {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact-title h1 {
+    font-size: 3rem;
+  }
+
+  .contact-subtitle p {
+    font-size: 1.5rem;
+  }
+
+  .contact-details {
+    font-size: 1rem;
+  }
+}

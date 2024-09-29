@@ -1,5 +1,42 @@
 ---
 layout: home
+title: Contact
 ---
 
-hello
+<div class="container-wrapper flex-grow-1 align-content-around">
+  <main>
+    <div class="content-container">
+      <!-- Title Section -->
+      <div class="contact-title">
+        <h1>Contact</h1>
+      </div>
+      <div class="blob-container3">
+        <img
+          loading="lazy"
+          src="{{ '/assets/images/blob2.svg' | relative_url }}"
+          alt="Blob Shape"
+        />
+      </div>
+      <div class="contact-page">
+        <!-- Subtitle Section -->
+        <div class="contact-subtitle">
+          <p>Interested? Let's get in touch.</p>
+        </div>
+
+        <!-- Contact Details Section -->
+        <div class="contact-details">
+          <p><strong>Misolare</strong></p>
+
+          <p><i class="fa-solid fa-location-dot"></i> Amsterdam, Netherlands</p>
+          <p><i class="fa-solid fa-phone"></i> +31 ... .... ...</p>
+          <p>
+            <i class="fa-solid fa-at"></i>
+            <a href="mailto:misolare@gmail.com">misolare@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<!-- Footer content -->
+{% include footer.html %}
