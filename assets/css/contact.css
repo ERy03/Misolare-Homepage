@@ -36,7 +36,20 @@
   max-width: 115%;
 }
 
+.blob-container0 {
+  position: absolute; /* Or relative, fixed, etc., depending on your design */
+  top: -20vw;
+  width: 100vw;
+  z-index: -1;
+  max-width: 115%;
+}
+
 .blob-container3 img {
+  width: 60%; /* Adjust size as needed */
+  height: auto;
+}
+
+.blob-container0 img {
   width: 60%; /* Adjust size as needed */
   height: auto;
 }
@@ -58,5 +71,13 @@
 
   .contact-details {
     font-size: 1rem;
+  }
+
+  .blob-container3 {
+    top: 0vw;
+  }
+
+  .blob-container0 {
+    top: -10vw;
   }
 }

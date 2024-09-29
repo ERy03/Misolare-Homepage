@@ -3,10 +3,19 @@ layout: home
 permalink: /404.html
 ---
 
-<div class="container-wrapper flex-grow-1 align-content-around">
+<div
+  class="container-wrapper d-flex flex-column justify-content-center align-items-center flex-grow-1"
+>
   <main>
     <div class="content-container">
-      <div class="d-flex flex-column align-items-center gap-4">
+      <div class="d-flex flex-column align-items-center gap-4 text-center">
+        <div class="blob-container0">
+          <img
+            loading="lazy"
+            src="{{ '/assets/images/blob2.svg' | relative_url }}"
+            alt="Blob Shape"
+          />
+        </div>
         <div class="contact-title">
           <h1>404 Page Not Found</h1>
         </div>
@@ -16,16 +25,6 @@ permalink: /404.html
           class="btn btn-lg contact-btn"
           >Back to Home</a
         >
-      </div>
-      <div
-        class="blob-container3"
-        style="top: -22vw; left: 0; text-align: center"
-      >
-        <img
-          loading="lazy"
-          src="{{ '/assets/images/blob2.svg' | relative_url }}"
-          alt="Blob Shape"
-        />
       </div>
     </div>
   </main>
