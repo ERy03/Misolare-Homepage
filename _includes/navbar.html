@@ -27,18 +27,26 @@
       ></button>
     </div>
     <div class="offcanvas-body">
-      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-        <li class="nav-item active">
+      <ul class="navbar-nav justify-content-end flex-grow-1">
+        <li
+          class="nav-item underline-on-hover {% if page.url == '/' %}active{% endif %}"
+        >
           <a class="nav-link" href="/">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+        <li
+          class="nav-item underline-on-hover {% if page.url contains 'about' %}active{% endif %}"
+        >
+          <a class="nav-link" href="/about/">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blogs</a>
+        <li
+          class="nav-item underline-on-hover {% if page.url contains 'blogs' %}active{% endif %}"
+        >
+          <a class="nav-link" href="/blogs/">Blogs</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+        <li
+          class="nav-item underline-on-hover {% if page.url contains 'contact' %}active{% endif %}"
+        >
+          <a class="nav-link" href="/contact/">Contact</a>
         </li>
       </ul>
     </div>
