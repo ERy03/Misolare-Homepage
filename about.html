@@ -1,0 +1,73 @@
+---
+layout: home
+title: About
+---
+
+<div class="container-wrapper flex-grow-1 align-content-around">
+  <main>
+    <div class="content-container">
+      <div class="about-page">
+        <div class="d-flex flex-column justify-content-center gap-4">
+          <!-- Title Section -->
+          <div class="about-subtitle">
+            <h2>
+              Hi, I'm Mikoto — I'm a content creator and IT sales expert based
+              in Amsterdam.
+            </h2>
+          </div>
+          <p class="about-details">
+            I'm passionate about two things—traveling and technology. As a
+            travel YouTuber, I document my adventures through vlogs, sharing my
+            experiences from various corners of the world. Whether I'm exploring
+            a hidden gem abroad or giving a glimpse into life in Amsterdam, I
+            aim to inspire others to embark on their own journeys. My channel is
+            a blend of destination highlights, travel tips, and authentic
+            day-to-day moments, allowing my audience to experience different
+            cultures and places through my lens. I love connecting with my
+            viewers, providing insights and recommendations that can make their
+            trips unforgettable.
+          </p>
+          <p class="about-details">
+            Alongside my love for travel, I work in IT sales and use my
+            expertise to help businesses solve technical problems and grow their
+            digital presence. Whether you're in need of tech solutions, content
+            creation guidance, or a well-planned trip, I'm here to assist!
+          </p>
+
+          <p class="about-details">
+            <i class="fa-brands fa-instagram pe-1"></i>
+            <a
+              href="{{site.instagram}}"
+              target="_blank"
+              rel="noopener noreferrer"
+              >mico_amsterdam</a
+            >
+          </p>
+          <p class="about-details">
+            <i class="fa-brands fa-youtube pe-1"></i>
+            <a href="{{site.youtube}}" target="_blank" rel="noopener noreferrer"
+              >mico_amsterdam</a
+            >
+          </p>
+
+          <div class="blob-container4">
+            <img
+              loading="lazy"
+              src="{{ '/assets/images/blob2.svg' | relative_url }}"
+              alt="Blob Shape"
+            />
+          </div>
+        </div>
+        <!-- Subtitle Section -->
+        <img
+          loading="lazy"
+          src="{{ '/assets/images/miko_profile.jpeg' | relative_url }}"
+          alt="Miko Profile"
+          class="rounded img-fluid"
+        />
+      </div>
+    </div>
+  </main>
+</div>
+<!-- Footer content -->
+{% include footer.html %}

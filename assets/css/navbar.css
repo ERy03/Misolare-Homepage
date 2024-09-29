@@ -1,0 +1,41 @@
+.navbar-misolare {
+  justify-content: space-between;
+}
+
+.navbar-misolare .navbar-collapse {
+  flex-grow: 0;
+}
+
+.offcanvas {
+  width: 45% !important;
+}
+
+.underline-on-hover {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  pointer-events: none;
+  cursor: default;
+}
+
+.active a {
+  color: black;
+}
+
+.underline-on-hover::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -1px;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-on-hover:hover::after {
+  width: 100%;
+}

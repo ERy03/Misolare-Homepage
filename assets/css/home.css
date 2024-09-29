@@ -4,6 +4,10 @@
   height: 100%;
 }
 
+.wrapper {
+  min-height: 100vh;
+}
+
 .card-body {
   padding-left: 0;
   padding-right: 0;
@@ -50,4 +54,20 @@
   background-color: #4a6e85;
   color: white;
   transform: scale(1.05);
+}
+
+.ratio-vid {
+  --bs-aspect-ratio: 33%;
+}
+
+@media (max-width: 992px) {
+  .ratio-vid {
+    --bs-aspect-ratio: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ratio-vid {
+    --bs-aspect-ratio: 56.25%;
+  }
 }
