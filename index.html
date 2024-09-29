@@ -9,7 +9,14 @@ title: MiSolare
 <div class="container-wrapper">
   <main>
     <div class="video-container d-flex ratio ratio-vid mt-4 mb-4">
-      <video class="object-fit-cover" autoplay muted preload="auto" loop>
+      <video
+        class="object-fit-cover"
+        autoplay
+        muted
+        preload="auto"
+        loop
+        playsinline
+      >
         <source
           src="{{ 'assets/video/misolare.MP4' | relative_url }}"
           type="video/mp4"
