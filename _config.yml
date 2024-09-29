@@ -21,13 +21,13 @@
 title: Misolare
 email: your-email@example.com
 description: MiSolare is operating in the Netherlands, helping clients with IT, content creation, and providing traveling consultations.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 # baseurl: "Misolare-Homepage" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Hello
 github_username: jekyll
 youtube: https://www.youtube.com/@machimico
-instagram: ""
+instagram: "https://www.instagram.com/mico_amsterdam?igsh=Y2VmNGRvdXZnOHM3"
 twitter: ""
 
 # Build settings
