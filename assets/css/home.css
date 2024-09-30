@@ -22,16 +22,16 @@
 }
 
 .blob-container1 {
-  position: absolute; /* Or relative, fixed, etc., depending on your design */
+  position: absolute;
   top: 0;
-  right: -60vw; /* Pushes the blob off-screen to the right */
-  width: 105vw; /* Extends width beyond the viewport */
-  z-index: -1; /* Ensure it’s behind other content */
+  right: -60vw;
+  width: 105vw;
+  z-index: -1;
 }
 
 .blob-container2 {
-  position: absolute; /* Or relative, fixed, etc., depending on your design */
-  top: -37vw; /* Extends width beyond the viewport */
+  position: absolute;
+  top: -37vw;
   z-index: -1;
   left: -48vw;
   width: 95vw;
@@ -39,7 +39,7 @@
 
 .blob-container1 img,
 .blob-container2 img {
-  width: 100%; /* Adjust size as needed */
+  width: 100%;
   height: auto;
 }
 

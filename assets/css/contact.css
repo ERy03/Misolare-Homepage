@@ -1,4 +1,3 @@
-/* Contact Page Styles */
 .contact-page {
   text-align: left;
   padding: 100px 0px;
@@ -28,7 +27,7 @@
 }
 
 .blob-container3 {
-  position: absolute; /* Or relative, fixed, etc., depending on your design */
+  position: absolute;
   top: -11vw;
   width: 100vw;
   z-index: -1;
@@ -37,7 +36,7 @@
 }
 
 .blob-container0 {
-  position: absolute; /* Or relative, fixed, etc., depending on your design */
+  position: absolute;
   top: -20vw;
   width: 100vw;
   z-index: -1;
@@ -45,16 +44,15 @@
 }
 
 .blob-container3 img {
-  width: 60%; /* Adjust size as needed */
+  width: 60%;
   height: auto;
 }
 
 .blob-container0 img {
-  width: 60%; /* Adjust size as needed */
+  width: 60%;
   height: auto;
 }
 
-/* Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
   .contact-page {
     grid-template-columns: 1fr;
