@@ -2,7 +2,7 @@
 .fa-twitter,
 .fa-youtube {
   transition: color 0.3s ease, transform 0.3s ease;
-  color: rgba(0, 0, 0, 0.5)
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .fa-instagram:hover,
@@ -10,5 +10,5 @@
 .fa-youtube:hover {
   color: rgba(0, 0, 0, 1);
   cursor: pointer;
-  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  transform: scale(1.1);
 }

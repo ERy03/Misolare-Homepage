@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 title: MiSolare
 ---
@@ -9,7 +6,14 @@ title: MiSolare
 <div class="container-wrapper">
   <main>
     <div class="video-container d-flex ratio ratio-vid mt-4 mb-4">
-      <video class="object-fit-cover" autoplay muted preload="auto" loop>
+      <video
+        class="object-fit-cover"
+        autoplay
+        muted
+        preload="auto"
+        loop
+        playsinline
+      >
         <source
           src="{{ 'assets/video/misolare.MP4' | relative_url }}"
           type="video/mp4"
@@ -133,12 +137,14 @@ title: MiSolare
       >
         <h3 class="text-uppercase text-center">Interested?</h3>
         <p class="text-center">Tell Us How We Can Help</p>
-        <a type="button" href="/contact.html" class="btn btn-lg contact-btn"
+        <a
+          type="button"
+          href="{{ site.baseurl }}/contact"
+          class="btn btn-lg contact-btn"
           >Get in touch</a
         >
       </section>
     </div>
   </main>
-  <!-- Footer content -->
   {% include footer.html %}
 </div>
